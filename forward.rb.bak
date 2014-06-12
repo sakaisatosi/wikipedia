@@ -1,0 +1,9 @@
+datafile = ARGV[0] 
+df = open(datafile, "r")
+
+dr = df.read
+xx = dr.gsub(/[\r\n]/,"")
+
+yy = xx.gsub!(/。/,"。\n¨")
+
+print(yy)
